@@ -29,7 +29,7 @@ In sample input 2
 .
 
 In sample input 3
-, the numbers modulo 42 are 39,40,41,0,1,2,40,41,0 and 1. There are 6 distinct numbers.
+, the numbers modulo 42 are 39,40,41,0,1,2,40,41,0 and 1. There are 6 distinct numbers.x
 */
 
 int main()
