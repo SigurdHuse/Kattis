@@ -1,4 +1,5 @@
-#include <iostream> 
+#include <iostream>
+#include <iomanip> 
 using namespace std; 
 
 /*
@@ -41,5 +42,14 @@ All output must be accurate to an absolute or relative error of at most 10−6
 
 int main()
 {
-
+    long double s = 0;
+    long double C, w,l;
+    int L;
+    cin >> C;
+    cin >> L;
+    for(int i = 0; i <L; ++i){
+        cin >> w >> l;
+        s += w*l;
+    }
+    cout << setprecision(16) <<s*C;
 }
