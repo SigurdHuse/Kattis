@@ -35,18 +35,12 @@ The first and only line of output should contain one number, the number of point
 iterations.
 */
 
-long long int points(long long int n){
-    if(n == 0){
-        return 4;
-    }
-    if(n == 1){
-        return 9;
-    }
-    return (points(n-1) - pow(2,n-2)*pow(2,n-2))*2 + pow(2,n-1)*pow(2,n-1);
-}
-
-
 int main()
 {
-    cout << points(2) << endl;
+    int n, side = 2;
+    cin >> n;
+    for(int i = 0; i < n; i++){
+        side += side-1; 
+    }
+    cout << side * side; 
 }
